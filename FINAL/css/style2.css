@@ -1,0 +1,114 @@
+/* Styles for Program Detail Page (detail-jurusan.html) */
+#program-detail {
+    padding-top: 40px; /* Sesuaikan padding agar tidak terlalu mepet header */
+    padding-bottom: 40px;
+    background-color: #fff; /* Latar belakang putih untuk kontainer detail */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+}
+
+#program-detail h2 {
+    font-size: 2.8em; /* Ukuran judul detail lebih besar dan menonjol */
+    margin-bottom: 30px;
+    color: #003366; /* Warna biru gelap dari header */
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+#program-detail h2::after {
+    content: '';
+    position: absolute;
+    width: 80px; /* Garis bawah lebih panjang untuk judul utama */
+    height: 4px; /* Garis lebih tebal */
+    background: #FFD700; /* Warna kuning keemasan sebagai aksen */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.detail-content {
+    max-width: 900px; /* Batasi lebar konten detail agar mudah dibaca */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#program-detail h3 {
+    color: #007bff; /* Warna biru terang untuk sub-judul */
+    margin-top: 35px; /* Jarak lebih besar dari elemen di atasnya */
+    margin-bottom: 18px;
+    border-bottom: 1px solid #e0e0e0; /* Garis bawah sedikit lebih halus */
+    padding-bottom: 8px;
+    font-size: 1.9em; /* Ukuran sub-judul lebih besar */
+}
+
+#program-detail p {
+    font-size: 1.15em; /* Ukuran teks paragraf sedikit lebih besar */
+    line-height: 1.8;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+#program-detail ul {
+    list-style: disc; /* Menggunakan bullet point standar */
+    margin-left: 30px; /* Indentasi lebih dalam */
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+#program-detail ul li {
+    margin-bottom: 10px; /* Jarak antar item daftar lebih lega */
+    font-size: 1.05em; /* Ukuran teks daftar sedikit lebih besar */
+    color: #444; /* Warna teks daftar sedikit lebih gelap */
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #6c757d; /* Warna abu-abu untuk tombol kembali */
+    color: #fff;
+    padding: 12px 25px; /* Padding lebih besar */
+    border-radius: 6px; /* Sedikit lebih membulat */
+    text-decoration: none;
+    margin-top: 40px; /* Jarak dari konten di atasnya */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.05em;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+    transform: translateY(-2px); /* Efek sedikit terangkat saat hover */
+}
+
+/* Responsive Adjustments for Program Detail Page */
+@media (max-width: 768px) {
+    #program-detail h2 {
+        font-size: 2em;
+    }
+    #program-detail h2::after {
+        width: 60px;
+    }
+    #program-detail h3 {
+        font-size: 1.6em;
+    }
+    #program-detail p,
+    #program-detail ul li {
+        font-size: 1em;
+    }
+    .back-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    #program-detail h2 {
+        font-size: 1.8em;
+    }
+    #program-detail h3 {
+        font-size: 1.4em;
+    }
+    .detail-content {
+        padding: 0 10px;
+    }
+}

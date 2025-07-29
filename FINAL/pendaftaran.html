@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Mahasiswa Baru - Universitas Handayani Makassar</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Universitas Handayani">
+                <h1>UNIVERSITAS<br>HANDAYANI<br>MAKASSAR</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="beranda.html">Beranda</a></li>
+                    <li><a href="tentang.html">Profil</a></li>
+                    <li><a href="jurusan.html">Akademik</a></li>
+                    <li><a href="berita.html">Informasi</a></li>
+                    <li><a href="galleri.html">Layanan</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="pendaftaran.html">PENDAFTARAN MABA</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="admission-content" class="container">
+        <h2>Pendaftaran Mahasiswa Baru</h2>
+        <h3>Prosedur Pendaftaran</h3>
+        <ol>
+            <li><strong>Langkah 1:</strong> Mengisi Formulir Pendaftaran Online.</li>
+            <li><strong>Langkah 2:</strong> Melengkapi Dokumen Persyaratan (Scan Ijazah, KTP, Akta Kelahiran, dll.).</li>
+            <li><strong>Langkah 3:</strong> Melakukan Pembayaran Biaya Pendaftaran.</li>
+            <li><strong>Langkah 4:</strong> Mengikuti Seleksi Masuk (jika ada).</li>
+            <li><strong>Langkah 5:</strong> Pengumuman Hasil Seleksi.</li>
+        </ol>
+
+        <h3>Formulir Pendaftaran Online</h3>
+        <form class="admission-form" action="#" method="POST">
+            <div class="form-group">
+                <label for="full_name">Nama Lengkap:</label>
+                <input type="text" id="full_name" name="full_name" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat:</label>
+                <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="phone">Nomor Telepon:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email_adm">Email:</label>
+                <input type="email" id="email_adm" name="email_adm" required>
+            </div>
+            <div class="form-group">
+                <label for="program_choice">Pilihan Program Studi:</label>
+                <select id="program_choice" name="program_choice" required>
+                    <option value="">-- Pilih Program Studi --</option>
+                    <option value="ti">Teknik Informatika</option>
+                    <option value="si">Sistem Informasi</option>
+                    <option value="sk">Sistem Komputer</option>
+                </select>
+            </div>
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Universitas Handayani Makassar. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+</body>
+</html>
